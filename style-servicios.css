@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    text-decoration: none;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b{
+    color: greenyellow;
+}
+
+
+.menu {
+    height: 80px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background:  greenyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: black;
+    font-size: 18px;
+    transition: color 500ms;
+    cursor: pointer;
+}
+
+.menu nav ul li a:hover{
+    color: greenyellow;
+}
+
+.menu .text-menu-selected{
+    color: greenyellow;
+}
+
+#icon-menu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #eeeeeefa;
+    border-radius: 100%;
+    color: gray;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
+
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: flex;
+    margin-top: 80px;
+    background-image: url(/IMAGENES/fondo\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+   
+}
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(39, 38, 38);
+}
+
+article img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.container-aside aside{
+    width: 320px;
+    border-right: 6px;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: greenyellow;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+    background: lightskyblue;
+    transition: 500ms;
+}
+
+.hide{
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.end-page{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+
+}    
+
+.end-page-info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.end-page-info h4{
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.end-page-info p{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+   
+}
+
+.end-page{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.end-page:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: greenyellow;
+}
+
+body{
+    background:  rgb(255, 255, 255);
+}
+
+/*responsive desing*/
+
+@media (max-width: 1220px) {
+
+    .header-content,
+    .container-content,
+    .end-page footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+
+    .move-container-all {
+        transform: translateX(100px);
+    }
+    
+    .container-all{
+        transition: 300ms;
+    }
+
+
+    .menu{
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: white;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms;
+    }
+
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-selected:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: gray;
+    }
+
+    .menu nav ul li a{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: greenyellow;
+    }
+
+    #icon-menu{
+        display: flex;
+    }
+
+    #icon-menu::after{
+        display: flex;
+    }
+
+    .container-aside{
+    flex-wrap: wrap;
+    }
+}
